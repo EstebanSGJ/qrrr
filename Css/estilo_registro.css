@@ -1,0 +1,79 @@
+/* Fondo de la página */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* Alinea el contenedor al fondo */
+    height: 100vh;
+    margin: 0;
+    background-image: url('../Imagenes/Fondo_marmol.jpg'); /* Ruta a tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h2{
+    margin-top: 50px;
+    margin-right: 200px;
+}
+/* Estilo para el botón de flecha */
+.button-oval {
+    position: absolute;
+    top: 110px;  /* Espacio desde el borde superior de la página */
+    left: 20px; /* Espacio desde el borde izquierdo de la página */
+    background: none;  /* Eliminar fondo */
+    border: none;  /* Eliminar borde */
+    padding: 10px;  /* Espacio alrededor del ícono */
+    font-size: 24px;  /* Tamaño del ícono */
+    color: #000;  /* Color del ícono */
+    cursor: pointer;  /* Cambiar cursor a mano cuando se pasa sobre el botón */
+    z-index: 10;  /* Asegurarse de que el botón esté encima de otros elementos */
+    
+}
+
+.button-oval i {
+    vertical-align: middle;  /* Alineación vertical para que el ícono esté centrado */
+    
+}
+.button-oval-crearcuenta{
+    padding: 10px 20px;
+    border: 2px solid black; /* Contorno negro */
+    border-radius: 50px; /* Forma ovalada */
+    background-color: white; /* Fondo blanco */
+    color: black; /* Texto en negro */
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s; /* Transición suave para el hover */
+}
+
+
+/* Contenedor de registro */
+.register-container {
+    width: 90%;
+    height: 750px;
+    max-width: 360px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Estilo de los campos de entrada */
+.register-container label {
+    display: block;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.register-container input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}

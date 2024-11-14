@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro-EventPay</title>
+     <!-- Agregar Font Awesome desde CDN -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   
+    <link rel="stylesheet" href="/Css/estilo_registro.css">
+</head>
+
+<body>
+    <div class="register-container">
+        <h2>Crear Cuenta</h2>
+        <form action="#" method="post">
+            <label for="nombre">Nombre(s):</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required>
+
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="celular">Celular:</label>
+            <input type="tel" id="celular" name="celular" required>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirm-password">Confirmar Contraseña:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+
+            <button type="submit" class="button-oval-crearcuenta" onclick="window.location.href='../Index.html'">Crear Cuenta</button>
+        </form>
+        
+        
+        <!-- Botón con el ícono de flecha -->
+        <button class="button-oval" onclick="window.location.href='../index.html'"><i class="fa-solid fa-chevron-left"></i></button>
+    </div>
+</body>
+</html>

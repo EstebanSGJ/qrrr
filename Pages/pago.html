@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagar con QR - EventPay</title>
+    <link rel="stylesheet" href="/Css/estilo_pago.css"> <!-- Estilo CSS para la página -->
+    <!-- Agregar Font Awesome desde CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="payment-container">
+        <h2>Escanea este código QR para pagar</h2>
+        <div class="qr-code-container">
+            <canvas id="payment-qr"></canvas> <!-- Aquí se generará el QR -->
+         <!-- Botones para acceder a otras secciones -->
+       
+
+    <!-- Incluir QR code generator (opcional si no lo tienes instalado localmente) -->
+    <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+
+    <script>
+        // URL del enlace de pago generado en el backend (esto debe venir de tu servidor o backend)
+        const paymentLink = 'https://pay.stripe.com/link'; // Aquí pondrías el enlace real de pago generado en el backend.
+
+        // Genera el código QR cuando se carga la página
+        QRCode.toCanvas(document.getElementById('payment-qr'), paymentLink, (error) => {
+            if (error) {
+                console.error('Error al generar el QR: ', error);
+            }
+        });
+    </script>
+      <div class="buttons-container">
+        <button class="btn_config" onclick="window.location.href='inicio.html'"><i class="fa-solid fa-house"></i></button>
+        <button class="btn_escaner" onclick="window.location.href='pago.html'"><i class="fa-solid fa-barcode"></i></button>
+        <button class="btn_config" onclick="window.location.href='configuracion.html'"><i class="fa-solid fa-gear"></i></button>
+        
+    </div>
+</body>
+</html>

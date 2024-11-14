@@ -1,0 +1,96 @@
+/* Estilo general para el contenedor de pago */
+.payment-container {
+    top: 50px;
+    width: 90%;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    box-sizing: border-box;
+    background-image: url('../Imagenes/Fondo_marmol.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* Título de la sección de QR */
+.payment-container h2 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Contenedor de QR con fondo claro y centrado */
+.qr-code-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajustes para el tamaño del canvas QR */
+.qr-code-container canvas {
+    width: 300px;  /* Tamaño grande del QR */
+    height: 300px;
+}
+
+
+
+/* Contenedor de botones en la parte inferior */
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d3d3d3;
+    border-radius: 15px;
+    padding: 15px;
+    position: fixed; /* Fija los botones en la parte inferior */
+    bottom: 20px; /* Margen inferior desde la parte inferior de la pantalla */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%; /* Ancho del contenedor */
+    max-width: 600px; /* Máximo ancho */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de los botones */
+.btn_config {
+    background: none;  /* Eliminar fondo */
+    border: none;  /* Eliminar borde */
+    padding: 15px;  /* Espacio alrededor del ícono */
+    font-size: 50px;  /* Tamaño del ícono */
+    color: #000;  /* Color del ícono */
+    cursor: pointer;  /* Cambiar cursor a mano cuando se pasa sobre el botón */
+    z-index: 10;  /* Asegurarse de que el botón esté encima de otros elementos */
+    margin-left: 30px;
+}
+
+.btn_escaner{
+    margin-left: 10px;
+    background: none;  /* Eliminar fondo */
+    border: none;  /* Eliminar borde */
+    padding: 15px;  /* Espacio alrededor del ícono */
+    font-size: 50px;  /* Tamaño del ícono */
+    color: #000;  /* Color del ícono */
+    cursor: pointer;  /* Cambiar cursor a mano cuando se pasa sobre el botón */
+    z-index: 10;  /* Asegurarse de que el botón esté encima de otros elementos */
+    
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+.buttons-container{
+    background-color: gray;
+    border-radius: 15px; /* Bordes redondeados */
+    padding:10px ;
+}

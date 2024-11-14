@@ -1,0 +1,128 @@
+/* Fondo de la página */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100vh;
+    margin: 0;
+    background-image: url('../Imagenes/Fondo_marmol.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Estilo del contenedor de login */
+.login-container {
+    width: 90%;
+    height: 750px;
+    max-width: 360px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Título */
+h2 {
+
+        margin-top: 50px;
+        margin-right: 200px;
+    
+}
+
+/* Grupo de campos de entrada */
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.input-group input:focus {
+    border-color: #007bff; /* Cambia el borde al foco */
+}
+
+/* Estilo del botón de inicio de sesión */
+.contraseña-button {
+    padding: 15px 30px;
+    border: 2px solid black; /* Contorno negro */
+    border-radius: 50px; /* Forma ovalada */
+    background-color: white; /* Fondo blanco */
+    color: black; /* Texto en negro */
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s; /* Transición suave para el hover */
+}
+
+.contraseña-button :hover {
+    background-color: white;
+}
+
+/* Estilo del botón de registrar */
+.register-button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.register-button:hover {
+    background-color: #333;
+}
+
+/* Enlace de "Olvidaste tu contraseña" */
+.forgot-password {
+    margin-top: 15px;
+}
+
+.forgot-password a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para el botón de flecha */
+.button-oval {
+    position: absolute;
+    top: 110px;  /* Espacio desde el borde superior de la página */
+    left: 20px; /* Espacio desde el borde izquierdo de la página */
+    background: none;  /* Eliminar fondo */
+    border: none;  /* Eliminar borde */
+    padding: 10px;  /* Espacio alrededor del ícono */
+    font-size: 24px;  /* Tamaño del ícono */
+    color: #000;  /* Color del ícono */
+    cursor: pointer;  /* Cambiar cursor a mano cuando se pasa sobre el botón */
+    z-index: 10;  /* Asegurarse de que el botón esté encima de otros elementos */
+    
+}
+
+.button-oval i {
+    vertical-align: middle;  /* Alineación vertical para que el ícono esté centrado */
+    
+}

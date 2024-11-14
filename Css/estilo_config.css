@@ -1,0 +1,140 @@
+/* Centrar el contenedor de los botones en la página */
+.configuracion_botones {
+    display: flex;
+    flex-direction: column; /* Coloca los botones en columna */
+    align-items: center; /* Centra los botones horizontalmente */
+    justify-content: center; /* Centra el contenedor verticalmente */
+    gap: 40px; /* Espacio entre los botones */
+    margin: auto;
+    padding: 20px;
+    width: 300px; /* Ancho fijo para el contenedor */
+    height: 500px; /* Altura fija para el contenedor */
+    border: 2px solid #ccc;
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar un efecto de elevación */
+    background-color: #f9f9f9;
+ 
+}
+
+
+
+/* Estilos de los botones */
+.btn_configuracion, .btn_personales {
+    padding: 15px 30px; /* Espaciado interno */
+    border: 2px solid black; /* Contorno negro */
+    border-radius: 50px; /* Forma ovalada */
+    background-color: white; /* Fondo blanco */
+    color: black; /* Texto en negro */
+    font-size: 1.5rem; /* Tamaño de la fuente */
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s; /* Transición suave para el hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    width: 200px; /* Ancho fijo */
+}
+
+/* Efecto hover */
+.btn_configuracion:hover, .btn_personales:hover {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+
+/* Reset de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Fondo de la página */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Contenedor principal */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+.logo{
+    width: 350px; /* Ajusta el tamaño aquí */
+    height: auto; /* Mantiene la proporción original */
+    max-width: 100%; /* Evita que se salga del contenedor en pantallas pequeñas */
+}
+/* Estilos para el saludo de usuario */
+.user-greeting {
+    position: fixed;
+    top: 20px; /* Separa el contenedor de la parte superior de la página */
+    left: 50%; /* Centra horizontalmente */
+    transform: translateX(-50%); /* Centrado absoluto */
+    width: 80%; /* Ajusta el ancho, puede cambiar según prefieras */
+    max-width: 600px; /* Limita el ancho en pantallas grandes */
+    background-color: #ffffff;
+    padding: 20px 30px; /* Aumenta el padding para mayor espacio interno */
+    border-radius: 15px; /* Bordes redondeados */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    background-image: url('../Imagenes/Fondo_marmol.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+
+/* Estilo del saludo de usuario */
+.user-greeting h1 {
+    font-size: 2rem; /* Tamaño de fuente mayor */
+    color: #333;
+    margin: 0;
+    padding-bottom: 10px; /* Espacio entre el texto y el ícono */
+}
+
+/* Estilo del ícono */
+.user-greeting i {
+    font-size: 2.5rem; /* Tamaño del ícono más grande */
+    color: #333;
+}
+
+/* Estilo de los botones */
+.btn_config {
+    background: none;  /* Eliminar fondo */
+    border: none;  /* Eliminar borde */
+    padding: 20px;  /* Espacio alrededor del ícono */
+    font-size: 50px;  /* Tamaño del ícono */
+    color: #000;  /* Color del ícono */
+    cursor: pointer;  /* Cambiar cursor a mano cuando se pasa sobre el botón */
+    z-index: 10;  /* Asegurarse de que el botón esté encima de otros elementos */
+    margin-left: 30px;
+}
+
+.btn_escaner{
+    margin-left: 10px;
+    background: none;  /* Eliminar fondo */
+    border: none;  /* Eliminar borde */
+    padding: 20px;  /* Espacio alrededor del ícono */
+    font-size: 50px;  /* Tamaño del ícono */
+    color: #000;  /* Color del ícono */
+    cursor: pointer;  /* Cambiar cursor a mano cuando se pasa sobre el botón */
+    z-index: 10;  /* Asegurarse de que el botón esté encima de otros elementos */
+    
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+.buttons-container{
+    background-color: gray;
+    border-radius: 15px; /* Bordes redondeados */
+}

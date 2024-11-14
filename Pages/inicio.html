@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - EventPay</title>
+    <!-- Agregar Font Awesome desde CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Vincular CSS -->
+    <link rel="stylesheet" href="/Css/estilo_inicio.css">
+</head>
+<body>
+    <div class="container">
+
+        <!-- Saludo con el nombre del usuario -->
+        <section class="user-greeting">
+            <img src="/Imagenes/event_logo-removebg-preview.png" alt="Logo" class="logo">
+            <i class="fa-solid fa-user"></i>
+            <h1>!Hola <span id="username">Cargando...</span>¡</h1>
+            
+        </section>
+
+        <!-- Historial de pagos -->
+        <section class="payment-history">
+            <h2>Historial de Pagos</h2>
+            <ul>
+                <li>Pago 1: $10.00 - Evento 1</li>
+                <li>Pago 2: $20.00 - Evento 2</li>
+                <li>Pago 3: $15.00 - Evento 3</li>
+            </ul>
+        </section>
+
+        <!-- Botones para acceder a otras secciones -->
+        <div class="buttons-container">
+            <button class="btn_config" onclick="window.location.href='inicio.html'"><i class="fa-solid fa-house"></i></button>
+            <button class="btn_escaner" onclick="window.location.href='pago.html'"><i class="fa-solid fa-barcode"></i></button>
+            <button class="btn_config" onclick="window.location.href='configuracion.html'"><i class="fa-solid fa-gear"></i></button>
+            
+        </div>
+    </div>
+
+    <script>
+        // Función para obtener el nombre del usuario desde el backend
+        async function obtenerNombreUsuario() {
+            const userId = 1; // Aquí puedes obtener el ID del usuario desde sesión, JWT, etc.
+            
+            try {
+                const response = await fetch(`http://localhost:3000/usuario/${userId}`);
+                if (response.ok) {
+                    const data = await response.json();
+                    // Actualiza el nombre del usuario en el frontend
+                    document.getElementById('username').innerText = data.nombre;
+                } else {
+                    document.getElementById('username').innerText = 'Usuario no encontrado';
+                }
+            } catch (error) {
+                console.error('Error al obtener el nombre del usuario:', error);
+                document.getElementById('username').innerText = 'Error al cargar el nombre';
+            }
+        }
+
+        // Llamada a la función cuando la página se carga
+        window.onload = obtenerNombreUsuario;
+    </script>
+</body>
+</html>
